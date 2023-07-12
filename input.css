@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+header,
+nav,
+li,
+ul,
+a {
+  font-family: Raleway;
+}
+
+hr {
+  border-top: 2px solid hsl(170, 45%, 43%);
+  width: 51%;
+  margin: auto;
+}
