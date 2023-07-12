@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -25,10 +31,10 @@
       }
     </style>
   </head>
-  <body class="grid place-content-center min-h-screen">
+  <body class="grid place-content-center min-h-screen p-8">
     <header>
-      <div>
-        <img src="images/logo.svg" alt="Fylo logo">
+      <div class="border-4">
+        <img src="images/logo.svg" alt="Fylo logo" />
       </div>
       <nav>
         <ul>
@@ -38,29 +44,245 @@
         </ul>
       </nav>
     </header>
+    <section>
+      <img src="images/illustration-1.svg" alt="illustration" />
+      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <p>
+        Fylo stores your most important files in one secure location. Access
+        them wherever you need, share and collaborate with friends, family, and
+        co-workers.
+      </p>
+      <form action="">
+        <fieldset>
+          <label for="email"></label>
+          <input type="email" name="email" id="email" />
+        </fieldset>
+        <button>Get Started</button>
+      </form>
+    </section>
+    <!-- ============= second section here  -->
+    <section>
+      <h2>Stay productive, wherever you are</h2>
+      <p>
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p>
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
+      </p>
+      <div>
+        <a href="">See how Fylo works</a>
+        <div>
+          <svg
+            width="16"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <circle id="b" cx="6" cy="6" r="6" />
+              <filter
+                x="-25%"
+                y="-25%"
+                width="150%"
+                height="150%"
+                filterUnits="objectBoundingBox"
+                id="a"
+              >
+                <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur
+                  stdDeviation="1"
+                  in="shadowOffsetOuter1"
+                  result="shadowBlurOuter1"
+                />
+                <feColorMatrix
+                  values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                  in="shadowBlurOuter1"
+                />
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(2 2)">
+                <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                <use fill="#3DA08F" xlink:href="#b" />
+              </g>
+              <path
+                d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                fill="#FFF"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- =============== testimonial section here ==================== -->
+    <section>
+      <div>
+        <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+          <text
+            transform="translate(-34 -25)"
+            fill="#07043B"
+            fill-rule="evenodd"
+            font-family="Helvetica"
+            font-size="45"
+          >
+            <tspan x="33" y="56">“</tspan>
+          </text>
+        </svg>
+      </div>
+      <blockquote>
+        Fylo has improved our team productivity by an order of magnitude. Since
+        making the switch our team has become a well-oiled collaboration
+        machine.
+      </blockquote>
+      <div>
+        <div>
+          <img
+            src="images/avatar-testimonial.jpg"
+            alt="Kyle Burton - founder & CEO"
+          />
+        </div>
+        <div>
+          <h3>Kyle Burton</h3>
+          <p>Founder & CEO, Huddle</p>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Early access section ===================  -->
 
-    All your files in one secure location, accessible anywhere. Fylo stores your
-    most important files in one secure location. Access them wherever you need,
-    share and collaborate with friends, family, and co-workers. Get Started Stay
-    productive, wherever you are Never let location be an issue when accessing
-    your files. Fylo has you covered for all of your file storage needs.
-    Securely share files and folders with friends, family and colleagues for
-    live collaboration. No email attachments required! See how Fylo works Fylo
-    has improved our team productivity by an order of magnitude. Since making
-    the switch our team has become a well-oiled collaboration machine. Kyle
-    Burton Founder & CEO, Huddle Get early access today It only takes a minute
-    to sign up and our free starter tier is extremely generous. If you have any
-    questions, our support team would be happy to help you. Get Started For Free
-    Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us
-    Terms Privacy
+    <h3>Get early access today</h3>
+    <p>
+      It only takes a minute to sign up and our free starter tier is extremely
+      generous. If you have any questions, our support team would be happy to
+      help you.
+    </p>
+    <form action="">
+      <fieldset>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" />
+      </fieldset>
+      <button>Get Started For Free</button>
+    </form>
 
     <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">MKF</a>
-      </p>
+      <div><img src="images/logo.svg" alt="Fylo logo" /></div>
+      <div>
+        <img src="images/icon-phone.svg" alt="phone" />
+        <p>Phone: +1-543-123-4567</p>
+      </div>
+      <div>
+        <img src="images/icon-email.svg" alt="email" />
+        <p>example@fylo.com</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Press</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </nav>
+      <!-- social media div here  -->
+      <div class="flex gap-4 justify-center mb-8 lg:justify-end lg:mr-12">
+        <!-- facebook logo  -->
+        <div class="social-media-div">
+          <svg
+            width="10.38706"
+            height="20.000202"
+            viewBox="0 0 2.748243 5.2917202"
+            version="1.1"
+            id="svg1152"
+            sodipodi:docname="facebook.svg"
+            inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <sodipodi:namedview
+              id="namedview1154"
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1.0"
+              inkscape:showpageshadow="2"
+              inkscape:pageopacity="0.0"
+              inkscape:pagecheckerboard="0"
+              inkscape:deskcolor="#d1d1d1"
+              inkscape:document-units="px"
+              showgrid="false"
+              inkscape:zoom="8.0675645"
+              inkscape:cx="-24.914582"
+              inkscape:cy="-3.6566178"
+              inkscape:window-width="1366"
+              inkscape:window-height="705"
+              inkscape:window-x="-8"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1"
+            />
+            <defs id="defs1149" />
+            <g
+              inkscape:label="Layer 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(-79.943202,-121.84078)"
+            >
+              <path
+                d="m 81.965836,121.84085 c -0.718232,0 -1.210104,0.43825 -1.210104,1.24335 v 0.69387 h -0.81253 v 0.94102 h 0.81253 v 2.41341 h 0.971258 v -2.41341 h 0.810262 l 0.121691,-0.94102 H 81.72699 v -0.6009 c 0,-0.27236 0.07578,-0.45804 0.466354,-0.45804 h 0.498101 v -0.84125 c -0.08616,-0.0115 -0.381574,-0.0371 -0.725609,-0.0371 z"
+                id="path4180"
+                inkscape:connector-curvature="0"
+                inkscape:export-filename="facebook.svg"
+                inkscape:export-xdpi="237.73639"
+                inkscape:export-ydpi="237.73639"
+              />
+            </g>
+          </svg>
+        </div>
+        <!-- twitter logo  -->
+        <div class="social-media-div">
+          <svg
+            width="24.611"
+            height="20"
+            version="1.1"
+            viewBox="0 0 6.5118 5.2917"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g transform="translate(-25.29 -70.102)">
+              <path
+                d="m31.801 70.728c-0.23946 0.10627-0.49698 0.1781-0.76717 0.21045 0.27576-0.1654 0.4875-0.42719 0.58725-0.73906-0.25809 0.15314-0.5439 0.26423-0.84834 0.32411-0.24356-0.25957-0.59077-0.42181-0.975-0.42181-0.73783 0-1.3358 0.59806-1.3358 1.3358 0 0.10474 0.01171 0.20673 0.03457 0.30444-1.1103-0.05564-2.0946-0.58763-2.7535-1.3958-0.115 0.19721-0.18087 0.42666-0.18087 0.67152 0 0.46353 0.23574 0.87235 0.5943 1.112-0.21898-0.0068-0.425-0.06696-0.60511-0.16709-2.57e-4 0.0056-2.57e-4 0.01119-2.57e-4 0.01677 0 0.64737 0.46054 1.1872 1.0716 1.31-0.112 0.03053-0.22999 0.04666-0.35184 0.04666-0.08617 0-0.16972-0.0081-0.25142-0.02379 0.17011 0.5307 0.66337 0.91698 1.248 0.9278-0.45758 0.35836-1.0335 0.57182-1.6594 0.57182-0.10776 0-0.21417-0.0063-0.31877-0.01861 0.59144 0.37903 1.2935 0.60011 2.048 0.60011 2.4571 0 3.8006-2.0355 3.8006-3.801 0-0.05789-0.0014-0.11539-0.0038-0.17268 0.2609-0.1885 0.48736-0.42372 0.66656-0.69167"
+                stroke-width=".26458"
+              />
+            </g>
+          </svg>
+        </div>
+        <!-- instagram logo  -->
+        <div class="social-media-div">
+          <svg
+            width="24.059"
+            height="24"
+            version="1.1"
+            viewBox="0 0 6.3655 6.35"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g transform="translate(-114.9 -113.87)">
+              <path
+                d="m116.74 113.87c-1.0161 0-1.8424 0.82677-1.8424 1.8429v2.6647c0 1.0161 0.82632 1.8424 1.8424 1.8424h2.6806c1.0161 0 1.8424-0.82632 1.8424-1.8424v-2.6647c0-1.0161-0.82632-1.8429-1.8424-1.8429zm0 0.54589h2.6806c0.72318 0 1.297 0.57382 1.297 1.297v2.6647c0 0.72318-0.57382 1.2965-1.297 1.2965h-2.6806c-0.72318 0-1.2965-0.57336-1.2965-1.2965v-2.6647c0-0.72318 0.57336-1.297 1.2965-1.297zm3.0487 0.54589c-0.21087 0-0.38171 0.17084-0.38171 0.38171s0.17084 0.38171 0.38171 0.38171 0.38171-0.17084 0.38171-0.38171-0.17084-0.38171-0.38171-0.38171zm-1.7084 0.44829c-0.89977 0-1.6349 0.73517-1.6349 1.6349 0 0.89977 0.73516 1.6349 1.6349 1.6349s1.6354-0.73516 1.6354-1.6349c0-0.89976-0.73562-1.6349-1.6354-1.6349zm0 0.54589c0.6048 0 1.0895 0.48424 1.0895 1.089s-0.4847 1.089-1.0895 1.089-1.089-0.48424-1.089-1.089 0.48424-1.089 1.089-1.089z"
+                color="#000000"
+                style="
+                  text-decoration-line: none;
+                  text-indent: 0;
+                  text-transform: none;
+                "
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
