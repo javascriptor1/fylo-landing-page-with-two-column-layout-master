@@ -38,9 +38,9 @@
       </div>
       <nav>
         <ul class="flex gap-6 text-sm text-VeryDarkBlue">
-          <li><a href="">Features</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Sign In</a></li>
+          <li><a href="" class="lg:text-lg">Features</a></li>
+          <li><a href="" class="lg:text-lg">Team</a></li>
+          <li><a href="" class="lg:text-lg">Sign In</a></li>
         </ul>
       </nav>
     </header>
@@ -72,7 +72,7 @@
               class="border border-VeryDarkBlue px-4 py-2 lg:px-16"
             />
             <button
-              class="text-LightGrayishBlue bg-BrightBlue px-4 py-2 font-bold lg:px-14"
+              class="text-LightGrayishBlue bg-BrightBlue px-4 py-2 font-bold lg:px-14 hover:bg-[#6b9bff]"
             >
               Get Started
             </button>
@@ -104,7 +104,8 @@
           for live collaboration. No email attachments required!
         </p>
         <div
-          class="flex items-center justify-center lg:justify-start text-ModerateCyan gap-2"
+          class="flex items-center justify-center lg:justify-start text-ModerateCyan gap-2 hover:text-[#c6e3e1]"
+          id="arrow-icon-div"
         >
           <a href="">See how Fylo works</a>
           <div>
@@ -113,6 +114,7 @@
               height="18"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="arrow-icon"
             >
               <defs>
                 <circle id="b" cx="6" cy="6" r="6" />
@@ -149,8 +151,6 @@
             </svg>
           </div>
         </div>
-        <hr />
-
         <!-- =============== testimonial article here ==================== -->
         <article class="mt-4 mb-28 p-8">
           <div>
@@ -221,7 +221,7 @@
             class="border border-VeryDarkBlue px-4 py-2 lg:rounded-sm"
           />
           <button
-            class="text-LightGrayishBlue bg-BrightBlue px-4 py-2 font-bold xl:w-[40%] lg:rounded-sm"
+            class="text-LightGrayishBlue bg-BrightBlue hover:bg-[#6b9bff] px-4 py-2 font-bold xl:w-[40%] lg:rounded-sm"
           >
             Get Started For Free
           </button>
@@ -267,21 +267,23 @@
         </div>
         <nav class="flex flex-col">
           <ul class="flex flex-col gap-4">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="">Press</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="" class="hover:text-BrightBlue">About Us</a></li>
+            <li><a href="" class="hover:text-BrightBlue">Jobs</a></li>
+            <li><a href="" class="hover:text-BrightBlue">Press</a></li>
+            <li><a href="" class="hover:text-BrightBlue">Blog</a></li>
           </ul>
         </nav>
         <nav class="flex flex-col mt-16 lg:mt-0">
           <ul class="flex flex-col gap-4">
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Privacy</a></li>
+            <li><a href="" class="hover:text-BrightBlue">Contact Us</a></li>
+            <li><a href="" class="hover:text-BrightBlue">Terms</a></li>
+            <li><a href="" class="hover:text-BrightBlue">Privacy</a></li>
           </ul>
         </nav>
         <!-- social media div here  -->
-        <div class="flex gap-4 justify-center items-center lg:items-start mt-12 lg:mt-0">
+        <div
+          class="flex gap-4 justify-center items-center lg:items-start mt-12 lg:mt-0"
+        >
           <!-- facebook logo  -->
           <div class="social-media-div">
             <svg
