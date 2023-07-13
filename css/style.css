@@ -783,10 +783,18 @@ a {
   font-family: Raleway;
 }
 
-hr {
-  border-top: 2px solid hsl(170, 45%, 43%);
-  width: 170px;
-  margin: auto;
+#arrow-icon-div {
+  border-bottom: 2px solid currentColor;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#arrow-icon-div:hover {
+  border-bottom: 2px solid #82d7c7;
+}
+
+#arrow-icon-div:hover svg use {
+  fill: #82d7c7;
 }
 
 @media (min-width: 1024px) {
@@ -810,6 +818,37 @@ svg {
   align-items: center;
 }
 
+/* .social-media-div:hover,
+.social-media-div:hover svg path{
+  border: 1px solid hsl(224, 93%, 58%);
+  fill: hsl(224, 93%, 58%);
+} */
+
+/* Below code will do the same job as above commented code  */
+
+.social-media-div:hover {
+  border: 1px solid hsl(224, 93%, 58%);
+}
+
+.social-media-div:hover svg {
+  fill: hsl(224, 93%, 58%);
+}
+
+.hover\:bg-\[\#6b9bff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 155 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-BrightBlue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(224 93% 58% / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#c6e3e1\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(198 227 225 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:mt-0 {
     margin-top: 0px;
@@ -823,10 +862,6 @@ svg {
     width: 50%;
   }
 
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-
   .lg\:w-\[45\%\] {
     width: 45%;
   }
@@ -837,10 +872,6 @@ svg {
 
   .lg\:w-\[90\%\] {
     width: 90%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 
   .lg\:flex-row-reverse {

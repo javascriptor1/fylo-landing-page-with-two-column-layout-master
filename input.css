@@ -17,10 +17,15 @@ a {
   font-family: Raleway;
 }
 
-hr {
-  border-top: 2px solid hsl(170, 45%, 43%);
-  width: 170px;
-  margin: auto;
+#arrow-icon-div {
+  border-bottom: 2px solid currentColor;
+  width: fit-content;
+}
+#arrow-icon-div:hover {
+  border-bottom: 2px solid #82d7c7;
+}
+#arrow-icon-div:hover svg use {
+  fill: #82d7c7;
 }
 
 @media (min-width: 1024px) {
@@ -42,4 +47,19 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* .social-media-div:hover,
+.social-media-div:hover svg path{
+  border: 1px solid hsl(224, 93%, 58%);
+  fill: hsl(224, 93%, 58%);
+} */
+
+/* Below code will do the same job as above commented code  */
+.social-media-div:hover {
+  border: 1px solid hsl(224, 93%, 58%);
+}
+
+.social-media-div:hover svg {
+  fill: hsl(224, 93%, 58%);
 }
