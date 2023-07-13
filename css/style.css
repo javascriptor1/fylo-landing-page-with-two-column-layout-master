@@ -570,6 +570,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -600,14 +604,6 @@ video {
 
 .w-\[35px\] {
   width: 35px;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .transform {
@@ -646,8 +642,16 @@ video {
   gap: 1rem;
 }
 
+.gap-48 {
+  gap: 12rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-full {
@@ -686,20 +690,8 @@ video {
   padding: 3rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-8 {
   padding: 2rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-4 {
@@ -733,6 +725,11 @@ video {
   line-height: 2rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -746,11 +743,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -793,20 +785,18 @@ a {
 
 hr {
   border-top: 2px solid hsl(170, 45%, 43%);
-  width: 51%;
+  width: 170px;
   margin: auto;
 }
 
-article {
-  color: #f6f6fe;
+@media (min-width: 1024px) {
+  hr {
+    margin-left: 0;
+  }
 }
 
 svg {
   fill: white;
-}
-
-#footer-nav {
-  border: 2px solid yellow;
 }
 
 .social-media-div {
@@ -821,12 +811,32 @@ svg {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:flex {
     display: flex;
   }
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .lg\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
   }
 
   .lg\:flex-row {
@@ -837,23 +847,24 @@ svg {
     flex-direction: row-reverse;
   }
 
-  .lg\:gap-4 {
-    gap: 1rem;
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .lg\:rounded-sm {
+    border-radius: 0.125rem;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
   }
 
   .lg\:px-14 {
@@ -861,13 +872,13 @@ svg {
     padding-right: 3.5rem;
   }
 
-  .lg\:text-left {
-    text-align: left;
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-3xl {
@@ -878,10 +889,6 @@ svg {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-\[38px\] {
-    font-size: 38px;
   }
 
   .lg\:text-\[40px\] {
@@ -898,20 +905,8 @@ svg {
     line-height: 1.75rem;
   }
 
-  .lg\:leading-10 {
-    line-height: 2.5rem;
-  }
-
-  .lg\:leading-6 {
-    line-height: 1.5rem;
-  }
-
-  .lg\:leading-9 {
-    line-height: 2.25rem;
-  }
-
-  .lg\:leading-relaxed {
-    line-height: 1.625;
+  .lg\:font-bold {
+    font-weight: 700;
   }
 
   .lg\:leading-normal {
@@ -920,12 +915,11 @@ svg {
 }
 
 @media (min-width: 1280px) {
-  .xl\:text-\[38px\] {
-    font-size: 38px;
+  .xl\:w-\[40\%\] {
+    width: 40%;
   }
 
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }

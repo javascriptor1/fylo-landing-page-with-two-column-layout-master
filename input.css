@@ -19,20 +19,18 @@ a {
 
 hr {
   border-top: 2px solid hsl(170, 45%, 43%);
-  width: 51%;
+  width: 170px;
   margin: auto;
 }
 
-article {
-  color: #f6f6fe;
+@media (min-width: 1024px) {
+  hr {
+    margin-left: 0;
+  }
 }
 
 svg {
   fill: white;
-}
-
-#footer-nav {
-  border: 2px solid yellow;
 }
 
 .social-media-div {
