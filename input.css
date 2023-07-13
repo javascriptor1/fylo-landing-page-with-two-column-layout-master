@@ -63,3 +63,9 @@ svg {
 .social-media-div:hover svg {
   fill: hsl(224, 93%, 58%);
 }
+
+/* Javascript validation class here  */
+
+.error-email {
+  border: 1px solid red;
+}

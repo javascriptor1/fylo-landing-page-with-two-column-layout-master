@@ -61,15 +61,15 @@
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
-        <form action="">
+        <form action="/" id="hero-button" novalidate>
           <fieldset class="flex flex-col xl:flex-row gap-4">
-            <label for="email" class="absolute ml-[-9999px]">email </label>
+            <label for="hero-email" class="absolute ml-[-9999px]">email </label>
             <input
               type="email"
               name="email"
-              id="email"
+              id="hero-email"
               placeholder="Enter your email"
-              class="border border-VeryDarkBlue px-4 py-2 lg:px-16"
+              class="border border-VeryDarkBlue px-4 py-2 xl:w-[350px]"
             />
             <button
               class="text-LightGrayishBlue bg-BrightBlue px-4 py-2 font-bold lg:px-14 hover:bg-[#6b9bff]"
@@ -78,6 +78,7 @@
             </button>
           </fieldset>
         </form>
+        <p id="hero-error-message" class="text-xs"></p>
       </div>
     </section>
     <!-- ============= second section here  -->
@@ -210,16 +211,22 @@
         </p>
       </div>
 
-      <form action="" class="lg:w-1/2">
+      <form action="" class="lg:w-1/2" id="early-access-button" novalidate>
         <fieldset class="flex flex-col gap-4">
-          <label for="email" class="absolute ml-[-9999px]">email </label>
+          <label for="early-access-email" class="absolute ml-[-9999px]"
+            >email
+          </label>
           <input
             type="email"
             name="email"
-            id="email"
+            id="early-access-email"
             placeholder="Enter your email"
-            class="border border-VeryDarkBlue px-4 py-2 lg:rounded-sm"
+            class="border border-VeryDarkBlue px-4 py-2 lg:rounded-sm text-VeryDarkBlue"
           />
+          <p
+            id="early-access-error-message"
+            class="mt-[-9px] text-xs text-[white]"
+          ></p>
           <button
             class="text-LightGrayishBlue bg-BrightBlue hover:bg-[#6b9bff] px-4 py-2 font-bold xl:w-[40%] lg:rounded-sm"
           >
@@ -229,7 +236,7 @@
       </form>
     </section>
 
-    <footer class="bg-VeryDarkBlue text-LightGrayishBlue p-12">
+    <footer class="bg-VeryDarkBlue text-LightGrayishBlue px-12 py-28">
       <div class="mb-8">
         <svg
           width="166"
@@ -380,5 +387,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

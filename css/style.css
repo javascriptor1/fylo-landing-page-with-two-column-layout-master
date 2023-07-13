@@ -582,6 +582,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[-9px\] {
+  margin-top: -9px;
+}
+
 .flex {
   display: flex;
 }
@@ -686,12 +690,13 @@ video {
   padding: 2.5rem;
 }
 
-.p-12 {
-  padding: 3rem;
-}
-
 .p-8 {
   padding: 2rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-4 {
@@ -702,6 +707,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .pb-20 {
@@ -762,6 +772,21 @@ video {
 .text-VeryDarkBlue {
   --tw-text-opacity: 1;
   color: hsl(243 87% 12% / var(--tw-text-opacity));
+}
+
+.text-\[green\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 128 0 / var(--tw-text-opacity));
+}
+
+.text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .filter {
@@ -834,6 +859,12 @@ svg {
   fill: hsl(224, 93%, 58%);
 }
 
+/* Javascript validation class here  */
+
+.error-email {
+  border: 1px solid red;
+}
+
 .hover\:bg-\[\#6b9bff\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(107 155 255 / var(--tw-bg-opacity));
@@ -903,11 +934,6 @@ svg {
     padding-right: 3.5rem;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .lg\:text-left {
     text-align: left;
   }
@@ -946,6 +972,10 @@ svg {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-\[350px\] {
+    width: 350px;
+  }
+
   .xl\:w-\[40\%\] {
     width: 40%;
   }
