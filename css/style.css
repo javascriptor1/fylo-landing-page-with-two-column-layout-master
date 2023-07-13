@@ -823,10 +823,6 @@ svg {
     width: 50%;
   }
 
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-
   .lg\:w-\[45\%\] {
     width: 45%;
   }
@@ -837,10 +833,6 @@ svg {
 
   .lg\:w-\[90\%\] {
     width: 90%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 
   .lg\:flex-row-reverse {
